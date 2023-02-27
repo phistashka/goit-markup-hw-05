@@ -51,31 +51,36 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   position: relative;
-  transition:  color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .active-link::after{
   content: "";
-  background: #404BBF;
+  background: var(--primary-brand);
   height: 4px;
   width: 100%;
 border-radius: 2px;
 position: absolute;
 bottom: -1px;
 left: 0;
+
+}
+.links-header .active-link{
+  color: var(--primary-brand);
 }
 
 .list-links:hover,
 .list-links:focus {
   text-decoration: none;
-  color: var(--pressed-state);
+  color: var(--primary-brand);
 }
 
 .address-mail {
   color: var(--text);
   text-decoration: none;
   font-style: normal;
-   transition:  color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+   transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address {
   margin-right: 40px;
@@ -136,7 +141,7 @@ left: 0;
   border-radius: 4px;
   margin: 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition:  background-color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-button:hover,
 .main-button:focus {
@@ -300,7 +305,7 @@ left: 0;
   display: inline-block;
   height: 88px;
   width: 168px;
-   transition-property: border-color,  color;
+  transition-property: border-color,  color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -433,7 +438,7 @@ gap: 24px;
   padding: 12px;
   background: var(--primary-brand);
   color: var(--background-buttontext-hover);
-  transition:  background-color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover, .social-link:focus
 {
@@ -462,7 +467,7 @@ color: var(--background-buttontext-hover);
   border-radius: 50%;
   display: inline-block;
   padding: 8px;
-  transition:  background-color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-footer{
   fill: currentColor;
